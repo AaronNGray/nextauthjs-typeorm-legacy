@@ -91,4 +91,6 @@ export type TypeORMAdapter<
   S = Omit<Session, "expires"> & { expires: Date }
 > = Adapter<C, O, U, P, S>
 
+export function TypeORMLegacyAdapter(configOrString:any, options:any);
+
 export { TypeORMAdapter as Adapter, TypeORMAdapterModels as Models }
